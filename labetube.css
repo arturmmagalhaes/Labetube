@@ -4,13 +4,13 @@
 
 header{
     background-color: orange;
-    padding: 1px;
-    width: 97vw;
+    padding: 0.5px;
+    width: 100%;
 }
 
 ul{
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
@@ -28,15 +28,15 @@ footer{
     text-align: center;
     font-size: 30px;
     width: 97vw;
+    color: white;
 }
 
-main{
+article{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     width: 97vw;
-    height: 100vh;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 img{
@@ -51,6 +51,7 @@ a{
 
 p{
     color: black;
+    text-align: center;
 }
 
 .video-colum-1{
@@ -78,12 +79,78 @@ p{
 }
 
 
+/*Responsivo*/
 
-/*Estilização das Telas de Vídeo*/
+@media screen and (min-width: 610px) and (max-width:1215px){
+    header{
+        width: 100%;
+    }
 
-video{
-    width: 50vw;
-    height: 35vw;
-    grid-row: 2;
-    grid-column: 2/4;
+    article{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 97vw;
+        margin-top: 1em;
+    }
+    
+    .video-colum-1{
+        margin-top: 2em;
+        grid-column: 1;
+        justify-self: center;
+    }
+    
+    .video-colum-2{
+        margin-top: 2em;
+        grid-column: 2;
+        justify-self: center;
+    }
+    
+    .video-colum-3{
+        margin-top: 2em;
+        grid-column: 1;
+        justify-self: center;
+    }
+    
+    .video-colum-4{
+        margin-top: 2em;
+        grid-column: 2;
+        justify-self: center;
+    }
+    
+}
+
+@media screen and (max-width: 649px){
+    article{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        width: 97vw;
+        margin-top: 1em;
+    }
+    
+    .video-colum-1{
+        margin-top: 2em;
+        grid-column: 1;
+        justify-self: center;
+    }
+    
+    .video-colum-2{
+        margin-top: 2em;
+        grid-column: 1;
+        justify-self: center;
+    }
+    
+    .video-colum-3{
+        margin-top: 2em;
+        grid-column: 1;
+        justify-self: center;
+    }
+    
+    .video-colum-4{
+        margin-top: 2em;
+        grid-column: 1;
+        justify-self: center;
+    }
+    
 }

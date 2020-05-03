@@ -1,0 +1,14 @@
+.destaque_video{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+video{
+    width: 50vw;
+    height: 30vw;
+}
